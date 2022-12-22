@@ -1,0 +1,42 @@
+/*@font-face {
+    font-family: Overpass;
+    src: url(https://fonts.google.com/specimen/Overpass);
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+
+body {
+    background-color: black;
+}
+
+.card-container {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    padding: 2%;
+    background-color: hsl(215, 25%, 13%);
+    border-radius: 20px;
+}
+
+#ratingIcon {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(210, 19%, 18%);
+    padding: 20px;
+    border-radius: 40px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400, 700;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400, 700;
+}
+
