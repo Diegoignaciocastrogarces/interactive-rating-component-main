@@ -49,6 +49,8 @@ p {
     font-family: 'Overpass', sans-serif;  
     color: hsl(217, 12%, 63%); 
     margin: 10px 10px 10px 0px;
+    user-select: none;
+    cursor: pointer;
     
     
 }
@@ -63,6 +65,7 @@ p {
     border-radius: 20px;
     margin-top: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .ratingBtn:hover {
