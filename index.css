@@ -12,7 +12,7 @@ body {
     background-color: black;
 }
 
-.card-container {
+#card-container {
     width: 345px;
     height: auto;
     margin: 15% 0px 0px 0;
@@ -20,6 +20,7 @@ body {
     background-color: hsl(215, 25%, 13%);
     border-radius: 20px;
     align-self: center;
+    position: absolute;
 }
 
 #ratingIcon {
@@ -86,7 +87,7 @@ p {
     color: hsl(25, 97%, 53%);
 }
 
-.thankYou-container {
+#thankYou-container {
     display: flex;
     flex-direction:column;
     width: 345px;
@@ -94,17 +95,20 @@ p {
     padding: 2%;
     background-color: hsl(215, 25%, 13%);
     border-radius: 20px;
+    margin-top: 15%;
     align-self: center;
     align-items: center;
+    visibility: hidden;
+    position: relative;
 }
 
-.thankYou-container img {
+#thankYou-container img {
     height: auto;
     width:fit-content;
     margin-bottom: 25px;
 }
 
-.thankYou-container #selectedRating {
+#thankYou-container #selectedRating {
     font-family: 'Overpass', sans-serif;
     background-color: hsl(210, 19%, 18%) ;
     color: hsl(25, 93%, 56%);
@@ -113,13 +117,13 @@ p {
     font-weight: 300, 700;
 }
 
-.thankYou-container h2 {
+#thankYou-container h2 {
     font-family: 'Overpass', sans-serif;
     color:  hsl(0, 0%, 100%);
     margin-bottom: 2px;
 }
 
-.thankYou-container p {
+#thankYou-container p {
     color: hsl(216, 12%, 54%);
     text-align: center;
 }
