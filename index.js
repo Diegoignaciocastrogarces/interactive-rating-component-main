@@ -1,26 +1,26 @@
-const ratingSection = document.getElementsByClassName('.card-container');
-const gratitudeSection = document.getElementsByClassName('.thankYou-container');
+const submitButton = document.getElementById('submitBtn');
+const rateButtons = document.querySelectorAll('.ratingBtn');
 
 let selectedRating;
+let ratingIsSelected;
 
 
-function selectRating(btnid) {
-
-    let ratingValues = document.querySelectorAll('.ratingBtn');
-    ratingValues.forEach(() => {
-        selectedRating = btnid.innerHTML;
-        
+rateButtons.forEach((btn) => {
+    btn.addEventListener('click', function() {
+        selectedRating = btn.textContent;
+        ratingIsSelected = true;
     })
-}
+});
 
-function submitRating() {
-    
-    document.getElementById('submitBtn').addEventListener('click', function() {
 
+submitButton.addEventListener('click', function() {
+    if (ratingIsSelected === true) {
         document.getElementById('thankYou-container').style.visibility = 'visible';
         document.getElementById('card-container').style.visibility = 'hidden';
 
-        document.getElementById('ratval').innerHTML = selectedRating;
-        
-    });
-}
+        document.getElementById('ratval').textContent = selectedRating;
+    }
+    else {
+        alert('No ha seleccionado ninguna calificación');
+    }  
+});
